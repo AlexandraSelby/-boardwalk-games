@@ -2,12 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Macondo&display=swap');
 
-/* Apply Inter to the body */
-body {
-    font-family: 'Inter', sans-serif;
-}
+/*CSS variables*/
+:root{
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #416a8e; /* Example primary color - blue*/
 
-/* Apply Macondo to all h1 elements */
-h1 {
-    font-family: 'Macondo', cursive;
+}
+/*global styles*/
+body{
+    font-family: var(--primary-font);
+}
+h1,
+h2,
+h3{
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
